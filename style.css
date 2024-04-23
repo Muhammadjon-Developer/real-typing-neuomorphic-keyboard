@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: #f2f7fb;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container__content {
+  width: 60%;
+}
+
+.textbox {
+  width: 100%;
+  resize: none;
+  background: linear-gradient(145deg, #f2f7fb, #e9f2fb);
+  box-shadow: inset 8px 8px 15px #d9e3ec;
+  border-radius: 12px;
+  border: none;
+  overflow: auto;
+  padding: 20px;
+  outline: none;
+  margin: 50px 0;
+}
+
+.keyboard {
+  padding: 25px;
+  background: linear-gradient(145deg, #f2f7fb, #e9f2fb);
+  box-shadow: 8px 8px 15px #d9e3ec;
+  border-radius: 12px;
+  min-width: 750px;
+  max-width: 1000px;
+}
+
+.keyboard__keys {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f2f7fb, #e9f2fb);
+  box-shadow: 5px 5px 15px #d9e3ec;
+}
+
+.key__letter {
+  background: -webkit-linear-gradient(245deg, #1e71f5, #3cdee7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.key__down {
+  color: linear-gradient(45deg, #1e71f5, #3cdee7);
+  background: linear-gradient(145deg, #e9f2fb, #f2f7fb);
+  box-shadow: inset 5px 5px 5px #d9e3ec;
+}
+
+.key__space {
+  width: 60%;
+}
